@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Roboto:wght@300;400;500&display=swap');
+
+.locationFinderBody{
+    /* border:2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Roboto', sans-serif;
+    width:100%
+}
+
+.locationFinderBody div{
+    margin: 4% 0%;
+}
+
+.locationFinderTitle{
+    font-size: 2em;
+}
+
+.inputBox{
+font-size: 1.2em;
+width:100%;
+}
+
+.submitBtn{
+    padding:8px;
+    /* margin:2px; */
+    border-radius: 10px;
+    border:2px solid white;
+    /* width:100px; */
+    text-align: center;
+}
+.submitBtn:hover{
+    background-color:#757d8e;
+    cursor: pointer;
+}
+.submitBtn:active{
+    transform: translateX(2px)
+}
+
+.weatherInfo{
+    text-align: center;
+}
+.weatherLocation{
+    font-size: 2em;
+}
+.weatherDescription{
+    font-size: 1.2em;
+}
+.weatherTemp{
+    font-size: 2em;
+}
+.weatherIcon{
+    /* border:2px solid white; */
+}
+
+.tempButton{
+    border:2px solid white;
+    padding: 3%;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.tempButton:hover{
+    background-color:#757d8e;
+    cursor: pointer;
+}
+.tempButton:active{
+    transform: translateY(2px)
+}

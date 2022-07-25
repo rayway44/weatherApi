@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* font-family: 'Epilogue', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body{
+    background-color: #444954;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+    
+.appBodyWrapper{
+
+    width:100vw;
+    height:100vh;
+    /* margin:0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
