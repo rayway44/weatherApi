@@ -8,7 +8,6 @@ import Geocode from "react-geocode";
 export default function LocationFinder() {
 
   const apiKey = process.env.REACT_APP_GOOGLE_API_KEY
-
   Geocode.setApiKey(apiKey);
 
   Geocode.setLanguage("en");
@@ -36,7 +35,7 @@ export default function LocationFinder() {
     const dateHolder = String(new Date().toLocaleString('en-US', options));
     setTime(dateHolder)
 
-    axios.post(`http://localhost:4000/onLoad`,{
+    axios.post(`/onLoad`,{
     // Default to Wellington
     lat: '-41.2923814',
     lng: '174.7787463',
@@ -67,9 +66,8 @@ export default function LocationFinder() {
         const lat = response.results[0].geometry.location.lat;
         const lng = response.results[0].geometry.location.lng;
 
-        axios.post(`http://localhost:4000/weather`,{
+        axios.post(`/search`,{
           lat: lat,
-          test: 'TEST',
           lng: lng})
         .then((res) => {
           const clouds = res.data.weather[0].description

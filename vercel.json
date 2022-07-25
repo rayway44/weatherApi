@@ -1,0 +1,20 @@
+{
+    "routes":[
+        {
+            "src": "/search",
+            "methods": [
+                "GET",
+                "POST"
+            ],
+            "dest": "/api/locationSearch.js"
+        },
+        {
+            "src": "/onLoad",
+            "methods": [
+                "GET",
+                "POST"
+            ],
+            "dest": "/api/locationOnLoad.js"
+        }
+    ]
+}
